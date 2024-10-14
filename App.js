@@ -44,7 +44,7 @@ export default function App() {
           data={courseGoals}
           renderItem={(itemData) => {
             return (
-             <GoalInput />
+             <GoalInput  text={itemData.item.text}/>
             );
           }}
         ></FlatList>

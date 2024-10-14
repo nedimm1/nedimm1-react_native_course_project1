@@ -1,11 +1,11 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 
 import React from "react";
 
-function GoalInput() {
+function GoalInput(props) {
   return (
     <View style={styles.goalItem}>
-      <Text style={styles.goalText}>{itemData.item.text}</Text>
+      <Text style={styles.goalText}>{props.text}</Text>
     </View>
   );
 }
