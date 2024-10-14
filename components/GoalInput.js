@@ -1,10 +1,9 @@
 import { StyleSheet, View, Text, Pressable } from "react-native";
-
 import React from "react";
 
 function GoalInput(props) {
   return (
-    <Pressable onPress={props.deleateFunction}>
+    <Pressable onPress={props.deleateFunction.bind(this, props.id)}>
       <View style={styles.goalItem}>
         <Text style={styles.goalText}>{props.text}</Text>
       </View>
